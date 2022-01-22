@@ -1,49 +1,26 @@
-## Copyright (C) 2022 Zona Info
-##
-## This program is free software: you can redistribute it and/or modify
-## it under the terms of the GNU General Public License as published by
-## the Free Software Foundation, either version 3 of the License, or
-## (at your option) any later version.
-##
-## This program is distributed in the hope that it will be useful,
-## but WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-## GNU General Public License for more details.
-##
-## You should have received a copy of the GNU General Public License
-## along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-## -*- texinfo -*-
-## @deftypefn {} {@var{retval} =} dorada (@var{input1}, @var{input2})
-##
-## @seealso{}
-## @end deftypefn
-
-## Author: Zona Info <Zona Info@DESKTOP-VOBKH0F>
-## Created: 2022-01-06
-
-% M閠odo b鷖queda de la secci髇 dorada 
-% Autores: 
+% M茅todo b煤squeda de la secci贸n dorada 
+% Autores:
 %Elizabeth Corte, Lizbeth Espinoza, Javier Sotamba
 % Fecha de implementacion: 07-01-2022
-% Esta funci髇 encuentra el valor m醲imo de una funci髇 
-% Par醡etros de entrada. 
-% f: funci髇
-% xl: l韒ite inferior  
-% xu: l韒ite superior 
-% it: n鷐ero de iteraciones 
+% Esta funci贸n encuentra el valor m谩ximo de una funci贸n 
+% Par谩metros de entrada. 
+% f: funci贸n
+% xl: l铆mite inferior  
+% xu: l铆mite superior 
+% it: n煤mero de iteraciones 
 % Parametros de salida.
-% x: valor en donde la funci髇 tiene valor m醲imo 
-% fx: valor en m醲imo de la funci髇 
+% x: valor en donde la funci贸n tiene valor m谩ximo 
+% fx: valor en m谩ximo de la funci贸n 
 
 
 
 function [x, fx] = dorada(f, xl, xu, it)
   
-  fl=f(xl); % l韒ite superior evaluaci髇 
-  fu=f(xu); % l韒ite inferior evaluaci髇 
+  fl=f(xl); % l铆mite superior evaluaci贸n 
+  fu=f(xu); % l铆mite inferior evaluaci贸n 
   R=(sqrt(5)-1)/2; 
-  d=(xu-xl)*R; % intervalo de nueva aproximaci髇 
+  d=(xu-xl)*R; % intervalo de nueva aproximaci贸n 
   x1=xl+d;
   fx1=f(x1); 
   x2=xu-d; 
